@@ -723,5 +723,19 @@
     "7": "All",
     "8": "Deprecated",
     "9": "EFortCustomBodyType_MAX"
+  },
+  "EFortDisplayTier": {
+    "0": "Invalid",
+    "1": "Handmade",
+    "2": "Copper",
+    "3": "Silver",
+    "4": "Malachite",
+    "5": "Obsidian",
+    "6": "Brightcore",
+    "7": "Spectrolite",
+    "8": "Shadowshard",
+    "9": "Sunbeam",
+    "10": "Moonglow",
+    "11": "EFortDisplayTier_MAX"
   }
 }

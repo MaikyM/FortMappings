@@ -9508,5 +9508,33 @@
       "type": "StructProperty",
       "structType": "FortUICameraFrameTargetBounds"
     }
+  },
+  "AthenaSeasonalDecorEvent": {
+    "0": {
+      "name": "SupplyDropOverride",
+      "type": "SoftObjectProperty"
+    },
+    "3": {
+      "name": "BattleBusOverride",
+      "type": "ObjectProperty"
+    },
+    "6": {
+      "name": "RequiredEventTag",
+      "type": "NameProperty"
+    }
+  },
+  "LobbyBackgroundTakeoverEvent": {
+    "1": {
+      "name": "AthenaLobbyBackgroundLevelName",
+      "type": "SoftObjectProperty"
+    },
+    "2": {
+      "name": "EventPriority",
+      "type": "IntProperty"
+    },
+    "4": {
+      "name": "RequiredEventTag",
+      "type": "NameProperty"
+    }
   }
 }

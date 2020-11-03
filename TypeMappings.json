@@ -7115,7 +7115,7 @@
     "0": {
       "name": "NameHashes",
       "type": "ArrayProperty",
-      "innerType": "IntProperty"
+      "innerType": "UInt64Property"
     },
     "1": {
       "name": "ScalarValues",
@@ -7133,6 +7133,91 @@
       "name": "Overrides",
       "type": "ArrayProperty",
       "innerType": "BoolProperty"
+    }
+  },
+  "Material": {
+    "13": {
+      "name": "Normal",
+      "type": "StructProperty",
+      "structType": "VectorMaterialInput"
+    },
+    "15": {
+      "name": "EmissiveColor",
+      "type": "StructProperty",
+      "structType": "ColorMaterialInput"
+    },
+    "17": {
+      "name": "BlendMode",
+      "type": "ByteProperty"
+    },
+    "37": {
+      "name": "TranslucencyLightingMode",
+      "type": "ByteProperty"
+    },
+    "40": {
+      "name": "TranslucencyDirectionalLightingIntensity",
+      "type": "FloatProperty"
+    },
+    "57": {
+      "name": "bUsedWithParticleSprites",
+      "type": "BoolProperty"
+    },
+    "60": {
+      "name": "bUsedWithNiagaraSprites",
+      "type": "BoolProperty"
+    },
+    "90": {
+      "name": "bCanMaskedBeAssumedOpaque",
+      "type": "BoolProperty"
+    },
+    "113": {
+      "name": "StateId",
+      "type": "StructProperty",
+      "structType": "Guid"
+    },
+    "115": {
+      "name": "CachedExpressionData",
+      "type": "StructProperty",
+      "structType": "MaterialCachedExpressionData"
+    }
+  },
+  "MaterialCachedExpressionData": {
+    "0": {
+      "name": "Parameters",
+      "type": "StructProperty",
+      "structType": "MaterialCachedParameters"
+    },
+    "1": {
+      "name": "ReferencedTextures",
+      "type": "ArrayProperty",
+      "innerType": "ObjectProperty"
+    },
+    "2": {
+      "name": "FunctionInfos",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "MaterialFunctionInfo"
+    },
+    "7": {
+      "name": "DynamicParameterNames",
+      "type": "ArrayProperty",
+      "innerType": "NameProperty"
+    },
+    "8": {
+      "name": "QualityLevelsUsed",
+      "type": "ArrayProperty",
+      "innerType": "BoolProperty"
+    }
+  },
+  "MaterialFunctionInfo": {
+    "0": {
+      "name": "StateId",
+      "type": "StructProperty",
+      "structType": "Guid"
+    },
+    "1": {
+      "name": "Function",
+      "type": "ObjectProperty"
     }
   },
   "LightmassMaterialInterfaceSettings": {
@@ -8090,6 +8175,39 @@
       "type": "IntProperty"
     }
   },
+  "RichCurve": {
+    "0": {
+      "name": "Keys",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "RichCurveKey"
+    },
+    "1": {
+      "name": "DefaultValue",
+      "type": "FloatProperty"
+    },
+    "2": {
+      "name": "PreInfinityExtrap",
+      "type": "EnumProperty",
+      "enumName": "ERichCurveExtrapolation"
+    },
+    "3": {
+      "name": "PostInfinityExtrap",
+      "type": "EnumProperty",
+      "enumName": "ERichCurveExtrapolation"
+    }
+  },
+  "RuntimeFloatCurve": {
+    "0": {
+      "name": "EditorCurveData",
+      "type": "StructProperty",
+      "structType": "RichCurve"
+    },
+    "1": {
+      "name": "ExternalCurve",
+      "type": "ObjectProperty"
+    }
+  },
   "SoundCue": {
     "0": {
       "name": "bPrimeOnLoad",
@@ -8111,6 +8229,10 @@
       "name": "AttenuationOverrides",
       "type": "StructProperty",
       "structType": "AttenuationOverrides"
+    },
+    "9": {
+      "name": "bHasPlayWhenSilent",
+      "type": "BoolProperty"
     },
     "10": {
       "name": "SoundClassObject",
@@ -8136,6 +8258,53 @@
     "24": {
       "name": "AttenuationSettings",
       "type": "ObjectProperty"
+    },
+    "30": {
+      "name": "SoundSubmixSends",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "SoundSubmixSendInfo"
+    }
+  },
+  "SoundSubmixSendInfo": {
+    "0": {
+      "name": "SendLevelControlMethod",
+      "type": "EnumProperty",
+      "enumName": "ESendLevelControlMethod"
+    },
+    "1": {
+      "name": "SendStage",
+      "type": "EnumProperty",
+      "enumName": "ESubmixSendStage"
+    },
+    "2": {
+      "name": "SoundSubmix",
+      "type": "ObjectProperty"
+    },
+    "3": {
+      "name": "SendLevel",
+      "type": "FloatProperty"
+    },
+    "4": {
+      "name": "MinSendLevel",
+      "type": "FloatProperty"
+    },
+    "5": {
+      "name": "MaxSendLevel",
+      "type": "FloatProperty"
+    },
+    "6": {
+      "name": "MinSendDistance",
+      "type": "FloatProperty"
+    },
+    "7": {
+      "name": "MaxSendDistance",
+      "type": "FloatProperty"
+    },
+    "8": {
+      "name": "CustomSendLevelCurve",
+      "type": "StructProperty",
+      "structType": "RuntimeFloatCurve"
     }
   },
   "SoundNodeDoppler": {
@@ -8179,6 +8348,10 @@
     "0": {
       "name": "SoundWaveAssetPtr",
       "type": "SoftObjectProperty"
+    },
+    "2": {
+      "name": "bLooping",
+      "type": "BoolProperty"
     }
   },
   "SoundConcurrencySettings": {

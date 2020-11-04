@@ -3876,7 +3876,7 @@
       "name": "AnimationFemaleOverride",
       "type": "SoftObjectProperty"
     },
-    "98": {
+    "99": {
       "name": "Rarity",
       "type": "EnumProperty",
       "enumName": "EFortRarity"

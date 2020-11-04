@@ -748,5 +748,30 @@
     "0": "KeepSelectionWhenRespawning",
     "1": "NeverKeepSelection",
     "2": "EWeaponSelectionPreservationType_MAX"
+  },
+  "EFortQuestType": {
+    "0": "Task",
+    "1": "Optional",
+    "2": "DailyQuest",
+    "3": "TransientQuest",
+    "4": "SurvivorQuest",
+    "5": "Achievement",
+    "6": "Onboarding",
+    "7": "StreamBroadcaster",
+    "8": "StreamViewer",
+    "9": "StreamSubscriber",
+    "10": "Athena",
+    "11": "AthenaDailyQuest",
+    "12": "AthenaEvent",
+    "13": "AthenaChallengeBundleQuest",
+    "14": "All",
+    "15": "EFortQuestType_MAX"
+  },
+  "EFortQuestSubtype": {
+    "0": "None",
+    "1": "WeeklyChallenge",
+    "2": "PunchCard",
+    "3": "QuickChallenge",
+    "4": "EFortQuestSubtype_MAX"
   }
 }

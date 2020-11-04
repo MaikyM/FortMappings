@@ -3918,6 +3918,10 @@
     "131": {
       "name": "DisplayAssetPath",
       "type": "SoftObjectProperty"
+    },
+    "132": {
+      "name": "Series",
+      "type": "ObjectProperty"
     }
   },
   "FortVariantTokenType": {
@@ -6853,11 +6857,11 @@
       "type": "EnumProperty",
       "enumName": "EWeaponSelectionPreservationType"
     },
-	"53": {
-	  "name": "AlwaysAllowedNativeActions",
-	  "type": "StructProperty",
-	  "structType": "GameplayTagContainer"
-	},
+    "53": {
+      "name": "AlwaysAllowedNativeActions",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
     "54": {
       "name": "PawnForcedCullDistance",
       "type": "StructProperty",
@@ -6871,10 +6875,10 @@
       "name": "MaximumAspectRatio",
       "type": "FloatProperty"
     },
-	"63": {
-	  "name": "bVehiclesDestroyAllBuildingSMActorsOnContact",
-	  "type": "BoolProperty"
-	},
+    "63": {
+      "name": "bVehiclesDestroyAllBuildingSMActorsOnContact",
+      "type": "BoolProperty"
+    },
     "64": {
       "name": "VehicleBoundsXYSplineClass",
       "type": "ObjectProperty"
@@ -7262,10 +7266,10 @@
       "name": "JoinInProgressMatchType",
       "type": "TextProperty"
     },
-	"181": {
-	  "name": "EndOfMatchXpFirstElim",
-	  "type": "IntProperty"
-	},
+    "181": {
+      "name": "EndOfMatchXpFirstElim",
+      "type": "IntProperty"
+    },
     "182": {
       "name": "EndOfMatchXpMultiplier",
       "type": "IntProperty"
@@ -7313,11 +7317,11 @@
       "name": "LootLevel",
       "type": "IntProperty"
     },
-	"198": {
-	  "name": "LootTagQuery",
-	  "type": "StructProperty",
-	  "structType": "GameplayTagContainer"
-	},
+    "198": {
+      "name": "LootTagQuery",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
     "200": {
       "name": "DBNOType",
       "type": "EnumProperty",
@@ -7394,10 +7398,10 @@
       "name": "SkydiveMusicOutroStinger",
       "type": "SoftObjectProperty"
     },
-	"220": {
-	  "name": "RespawnStinger",
-	  "type": "SoftObjectProperty"
-	},
+    "220": {
+      "name": "RespawnStinger",
+      "type": "SoftObjectProperty"
+    },
     "221": {
       "name": "GarbageCollectionFrequency",
       "type": "FloatProperty"
@@ -10324,6 +10328,26 @@
     "4": {
       "name": "RequiredEventTag",
       "type": "NameProperty"
+    }
+  },
+  "FortQuestItemDefinition": {
+    "0": {
+      "name": "QuestType",
+      "type": "EnumProperty",
+      "enumName": "EFortQuestType"
+    },
+    "1": {
+      "name": "QuestSubtype",
+      "type": "EnumProperty",
+      "enumName": "EFortQuestSubtype"
+    },
+    "12": {
+      "name": "bIncludedInCategories",
+      "type": "BoolProperty"
+    },
+    "25": {
+      "name": "RewardsTable",
+      "type": "ObjectProperty"
     }
   }
 }

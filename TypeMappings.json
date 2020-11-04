@@ -7455,6 +7455,21 @@
     }
   },
   "Material": {
+    "10": {
+      "name": "Metallic",
+      "type": "StructProperty",
+      "structType": "VectorMaterialInput"
+    },
+    "11": {
+      "name": "Specular",
+      "type": "StructProperty",
+      "structType": "VectorMaterialInput"
+    },
+    "12": {
+      "name": "Anisotropy",
+      "type": "StructProperty",
+      "structType": "VectorMaterialInput"
+    },
     "13": {
       "name": "Normal",
       "type": "StructProperty",
@@ -7469,24 +7484,95 @@
       "name": "BlendMode",
       "type": "ByteProperty"
     },
+    "20": {
+      "name": "ShadingModel",
+      "type": "ByteProperty"
+    },
+    "22": {
+      "name": "ShadingModels",
+      "type": "StructProperty",
+      "structType": "MaterialShadingModelField"
+    },
+    "23": {
+      "name": "OpacityMaskClipValue",
+      "type": "FloatProperty"
+    },
+    "24": {
+      "name": "WorldPositionOffset",
+      "type": "StructProperty",
+      "structType": "VectorMaterialInput"
+    },
+    "26": {
+      "name": "MaterialAttributes",
+      "type": "StructProperty",
+      "structType": "MaterialAttributesInput"
+    },
+    "29": {
+      "name": "bEnableSeparateTranslucency",
+      "type": "BoolProperty"
+    },
+    "30": {
+      "name": "bEnableResponsiveAA",
+      "type": "BoolProperty"
+    },
+    "33": {
+      "name": "TwoSided",
+      "type": "BoolProperty"
+    },
     "37": {
       "name": "TranslucencyLightingMode",
       "type": "ByteProperty"
+    },
+    "39": {
+      "name": "NumCustomizedUVs",
+      "type": "IntProperty"
     },
     "40": {
       "name": "TranslucencyDirectionalLightingIntensity",
       "type": "FloatProperty"
     },
+    "55": {
+      "name": "bUsedWithSkeletalMesh",
+      "type": "BoolProperty"
+    },
     "57": {
       "name": "bUsedWithParticleSprites",
+      "type": "BoolProperty"
+    },
+    "58": {
+      "name": "bUsedWithBeamTrails",
+      "type": "BoolProperty"
+    },
+    "59": {
+      "name": "bUsedWithMeshParticles",
       "type": "BoolProperty"
     },
     "60": {
       "name": "bUsedWithNiagaraSprites",
       "type": "BoolProperty"
     },
+    "61": {
+      "name": "bUsedWithNiagaraRibbons",
+      "type": "BoolProperty"
+    },
+    "62": {
+      "name": "bUsedWithNiagaraMeshParticles",
+      "type": "BoolProperty"
+    },
+    "67": {
+      "name": "bUsedWithInstancedStaticMeshes",
+      "type": "BoolProperty"
+    },
+    "87": {
+      "name": "AllowTranslucentCustomDepthWrites",
+      "type": "BoolProperty"
+    },
     "90": {
       "name": "bCanMaskedBeAssumedOpaque",
+      "type": "BoolProperty"
+    },
+    "94": {
+      "name": "bUseMaterialAttributes",
       "type": "BoolProperty"
     },
     "113": {
@@ -7517,6 +7603,12 @@
       "innerType": "StructProperty",
       "structType": "MaterialFunctionInfo"
     },
+    "3": {
+      "name": "ParameterCollectionInfos",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "MaterialParameterCollectionInfo"
+    },
     "7": {
       "name": "DynamicParameterNames",
       "type": "ArrayProperty",
@@ -7526,6 +7618,12 @@
       "name": "QualityLevelsUsed",
       "type": "ArrayProperty",
       "innerType": "BoolProperty"
+    }
+  },
+  "MaterialShadingModelField": {
+    "0": {
+      "name": "ShadingModelField",
+      "type": "UInt16Property"
     }
   },
   "MaterialFunctionInfo": {
@@ -9881,6 +9979,34 @@
       "name": "CameraFramingBounds",
       "type": "StructProperty",
       "structType": "FortUICameraFrameTargetBounds"
+    }
+  },
+  "AthenaSeasonalDecorEvent": {
+    "0": {
+      "name": "SupplyDropOverride",
+      "type": "SoftObjectProperty"
+    },
+    "3": {
+      "name": "BattleBusOverride",
+      "type": "ObjectProperty"
+    },
+    "6": {
+      "name": "RequiredEventTag",
+      "type": "NameProperty"
+    }
+  },
+  "LobbyBackgroundTakeoverEvent": {
+    "1": {
+      "name": "AthenaLobbyBackgroundLevelName",
+      "type": "SoftObjectProperty"
+    },
+    "2": {
+      "name": "EventPriority",
+      "type": "IntProperty"
+    },
+    "4": {
+      "name": "RequiredEventTag",
+      "type": "NameProperty"
     }
   }
 }

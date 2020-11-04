@@ -737,5 +737,11 @@
     "9": "Sunbeam",
     "10": "Moonglow",
     "11": "EFortDisplayTier_MAX"
+  },
+  "EDetailMode": {
+    "0": "DM_Low",
+    "1": "DM_Medium",
+    "2": "DM_High",
+    "3": "DM_MAX"
   }
 }

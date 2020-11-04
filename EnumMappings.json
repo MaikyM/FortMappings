@@ -743,5 +743,10 @@
     "1": "DM_Medium",
     "2": "DM_High",
     "3": "DM_MAX"
+  },
+  "EWeaponSelectionPreservationType": {
+    "0": "KeepSelectionWhenRespawning",
+    "1": "NeverKeepSelection",
+    "2": "EWeaponSelectionPreservationType_MAX"
   }
 }

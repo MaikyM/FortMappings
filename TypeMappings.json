@@ -3863,6 +3863,11 @@
       "name": "BaseMaterial",
       "type": "ObjectProperty"
     },
+    "8": {
+      "name": "InitialColor",
+      "type": "StructProperty",
+      "structType": "LinearColor"
+    },
     "36": {
       "name": "Animation",
       "type": "SoftObjectProperty"
@@ -3876,41 +3881,41 @@
       "type": "EnumProperty",
       "enumName": "EFortRarity"
     },
-    "112": {
+    "113": {
       "name": "DisplayName",
       "type": "TextProperty"
     },
-    "113": {
+    "114": {
       "name": "ShortDescription",
       "type": "TextProperty"
     },
-    "114": {
+    "115": {
       "name": "Description",
       "type": "TextProperty"
     },
-    "115": {
+    "116": {
       "name": "DisplayNamePrefix",
       "type": "TextProperty"
     },
-    "117": {
+    "118": {
       "name": "GameplayTags",
       "type": "StructProperty",
       "structType": "GameplayTagContainer"
     },
-    "118": {
+    "119": {
       "name": "AutomationTags",
       "type": "StructProperty",
       "structType": "GameplayTagContainer"
     },
-    "128": {
+    "129": {
       "name": "SmallPreviewImage",
       "type": "SoftObjectProperty"
     },
-    "129": {
+    "130": {
       "name": "LargePreviewImage",
       "type": "SoftObjectProperty"
     },
-    "130": {
+    "131": {
       "name": "DisplayAssetPath",
       "type": "SoftObjectProperty"
     }
@@ -6843,6 +6848,16 @@
       "type": "EnumProperty",
       "enumName": "EForceKickAfterDeathMode"
     },
+    "52": {
+      "name": "QuickbarSelectionPreservationMode",
+      "type": "EnumProperty",
+      "enumName": "EWeaponSelectionPreservationType"
+    },
+	"53": {
+	  "name": "AlwaysAllowedNativeActions",
+	  "type": "StructProperty",
+	  "structType": "GameplayTagContainer"
+	},
     "54": {
       "name": "PawnForcedCullDistance",
       "type": "StructProperty",
@@ -6856,6 +6871,10 @@
       "name": "MaximumAspectRatio",
       "type": "FloatProperty"
     },
+	"63": {
+	  "name": "bVehiclesDestroyAllBuildingSMActorsOnContact",
+	  "type": "BoolProperty"
+	},
     "64": {
       "name": "VehicleBoundsXYSplineClass",
       "type": "ObjectProperty"
@@ -7078,6 +7097,11 @@
       "type": "ArrayProperty",
       "innerType": "SoftObjectProperty"
     },
+    "135": {
+      "name": "QueryNameToLootCountScaleTables",
+      "type": "ArrayProperty",
+      "innerType": "IDK"
+    },
     "136": {
       "name": "ExitCraftInfo",
       "type": "SoftObjectProperty"
@@ -7238,6 +7262,10 @@
       "name": "JoinInProgressMatchType",
       "type": "TextProperty"
     },
+	"181": {
+	  "name": "EndOfMatchXpFirstElim",
+	  "type": "IntProperty"
+	},
     "182": {
       "name": "EndOfMatchXpMultiplier",
       "type": "IntProperty"
@@ -7285,6 +7313,11 @@
       "name": "LootLevel",
       "type": "IntProperty"
     },
+	"198": {
+	  "name": "LootTagQuery",
+	  "type": "StructProperty",
+	  "structType": "GameplayTagContainer"
+	},
     "200": {
       "name": "DBNOType",
       "type": "EnumProperty",
@@ -7361,6 +7394,10 @@
       "name": "SkydiveMusicOutroStinger",
       "type": "SoftObjectProperty"
     },
+	"220": {
+	  "name": "RespawnStinger",
+	  "type": "SoftObjectProperty"
+	},
     "221": {
       "name": "GarbageCollectionFrequency",
       "type": "FloatProperty"

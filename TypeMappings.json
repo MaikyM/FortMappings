@@ -5676,20 +5676,12 @@
       "name": "bShouldUsePerfectAimWhenTargetingMinSpread",
       "type": "BoolProperty"
     },
-    "8": {
-      "name": "bUseOnTouch",
-      "type": "BoolProperty"
-    },
     "9": {
       "name": "bAllowADSInAir",
       "type": "BoolProperty"
     },
     "10": {
       "name": "bShowReticleHitNotifyAtImpactLocation",
-      "type": "BoolProperty"
-    },
-    "11": {
-      "name": "bForceProjectileTooltip",
       "type": "BoolProperty"
     },
     "13": {
@@ -5704,24 +5696,6 @@
       "name": "WeaponStatHandle",
       "type": "StructProperty",
       "structType": "DataTableRowHandle"
-    },
-    "17": {
-      "name": "WeaponRechargeAmmoRate",
-      "type": "StructProperty",
-      "structType": "ScalableFloat"
-    },
-    "18": {
-      "name": "WeaponRechargeAmmoQuantity",
-      "type": "StructProperty",
-      "structType": "ScalableFloat"
-    },
-    "19": {
-      "name": "AbilitySet",
-      "type": "SoftObjectProperty"
-    },
-    "20": {
-      "name": "AlterationSlotsLoadoutRow",
-      "type": "NameProperty"
     },
     "22": {
       "name": "BaseAlteration",
@@ -5748,10 +5722,6 @@
       "type": "ArrayProperty",
       "innerType": "SoftObjectProperty"
     },
-    "30": {
-      "name": "EquippedAbilitySet",
-      "type": "SoftObjectProperty"
-    },
     "31": {
       "name": "EquippedCharacterParts",
       "type": "ArrayProperty",
@@ -5761,32 +5731,10 @@
       "name": "AmmoData",
       "type": "SoftObjectProperty"
     },
-    "33": {
-      "name": "AdditionalData",
-      "type": "ObjectProperty"
-    },
-    "34": {
-      "name": "LowAmmoPercentage",
-      "type": "FloatProperty"
-    },
     "35": {
       "name": "TriggerType",
       "type": "EnumProperty",
       "enumName": "EFortWeaponTriggerType"
-    },
-    "36": {
-      "name": "SecondaryTriggerType",
-      "type": "EnumProperty",
-      "enumName": "EFortWeaponTriggerType"
-    },
-    "37": {
-      "name": "DisplayTier",
-      "type": "EnumProperty",
-      "enumName": "EFortDisplayTier"
-    },
-    "38": {
-      "name": "bUsesPhantomReserveAmmo",
-      "type": "BoolProperty"
     },
     "39": {
       "name": "bUsesCustomAmmoType",
@@ -5800,14 +5748,6 @@
       "name": "bTargetingPreventsReload",
       "type": "BoolProperty"
     },
-    "43": {
-      "name": "bCanFireWhileInstigatorTethered",
-      "type": "BoolProperty"
-    },
-    "44": {
-      "name": "bCanFireWhileNotTargetedInVehicle",
-      "type": "BoolProperty"
-    },
     "45": {
       "name": "bAlwaysChargeUpToMin",
       "type": "BoolProperty"
@@ -5818,10 +5758,6 @@
     },
     "48": {
       "name": "bPreventDefaultPreload",
-      "type": "BoolProperty"
-    },
-    "49": {
-      "name": "bRequestClientPreload",
       "type": "BoolProperty"
     },
     "50": {
@@ -5911,12 +5847,12 @@
       "name": "bShowDirectionalArrowWhenFarOff",
       "type": "BoolProperty"
     },
-    "77": {
-      "name": "bCanBeReplacedByPickup",
-      "type": "BoolProperty"
-    },
     "76": {
       "name": "bCanBeDropped",
+      "type": "BoolProperty"
+    },
+    "77": {
+      "name": "bCanBeReplacedByPickup",
       "type": "BoolProperty"
     },
     "78": {
@@ -5927,33 +5863,17 @@
       "name": "bCanBeDepositedInStorageVault",
       "type": "BoolProperty"
     },
-    "80": {
-      "name": "bItemHasDurability",
-      "type": "BoolProperty"
-    },
-    "81": {
-      "name": "bAllowedToBeLockedInInventory",
-      "type": "BoolProperty"
-    },
     "82": {
       "name": "bOverridePickupMeshTransform",
+      "type": "BoolProperty"
+    },
+    "80": {
+      "name": "bItemHasDurability",
       "type": "BoolProperty"
     },
     "83": {
       "name": "bAlwaysCountForCollectionQuest",
       "type": "BoolProperty"
-    },
-    "84": {
-      "name": "bDropOnDeath",
-      "type": "BoolProperty"
-    },
-    "85": {
-      "name": "bDropOnLogout",
-      "type": "BoolProperty"
-    },
-    "89": {
-      "name": "DropCount",
-      "type": "IntProperty"
     },
     "90": {
       "name": "MiniMapViewableDistance",
@@ -5965,23 +5885,14 @@
       "structType": "SlateBrush"
     },
     "93": {
-      "name": "FarOffMiniMapIconBrush",
+      "name": "LootLevelData",
       "type": "StructProperty",
-      "structType": "SlateBrush"
+      "structType": "DataTableCategoryHandle"
     },
     "94": {
       "name": "PickupMeshTransform",
       "type": "StructProperty",
       "structType": "Transform"
-    },
-    "99": {
-      "name": "PickupMinimapIconBrush",
-      "type": "StructProperty",
-      "structType": "SlateBrush"
-    },
-    "106": {
-      "name": "PickupStaticMesh",
-      "type": "SoftObjectProperty"
     },
     "107": {
       "name": "PickupSkeletalMesh",
@@ -5991,16 +5902,8 @@
       "name": "PickupSound",
       "type": "SoftObjectProperty"
     },
-    "110": {
-      "name": "PickupByNearbyPawnSound",
-      "type": "SoftObjectProperty"
-    },
     "111": {
       "name": "DropSound",
-      "type": "SoftObjectProperty"
-    },
-    "112": {
-      "name": "DroppedLoopSound",
       "type": "SoftObjectProperty"
     },
     "113": {
@@ -6020,10 +5923,6 @@
       "name": "DisassembleDurabilityDegradeMaxLootPercent",
       "type": "FloatProperty"
     },
-    "117": {
-      "name": "PreferredQuickbarSlot",
-      "type": "IntProperty"
-    },
     "118": {
       "name": "MinLevel",
       "type": "IntProperty"
@@ -6036,16 +5935,6 @@
       "name": "Rarity",
       "type": "EnumProperty",
       "enumName": "EFortRarity"
-    },
-    "123": {
-      "name": "ItemType",
-      "type": "EnumProperty",
-      "enumName": "EFortItemType"
-    },
-    "124": {
-      "name": "PrimaryAssetIdItemTypeOverride",
-      "type": "EnumProperty",
-      "enumName": "EFortItemType"
     },
     "125": {
       "name": "FilterOverride",
@@ -6070,10 +5959,6 @@
       "name": "bAllowMultipleStacks",
       "type": "BoolProperty"
     },
-    "132": {
-      "name": "bAutoBalanceStacks",
-      "type": "BoolProperty"
-    },
     "134": {
       "name": "bInventorySizeLimited",
       "type": "BoolProperty"
@@ -6084,10 +5969,6 @@
     },
     "136": {
       "name": "DisplayName",
-      "type": "TextProperty"
-    },
-    "137": {
-      "name": "ShortDescription",
       "type": "TextProperty"
     },
     "138": {
@@ -6108,11 +5989,6 @@
       "type": "StructProperty",
       "structType": "GameplayTagContainer"
     },
-    "145": {
-      "name": "MaxStackSize",
-      "type": "StructProperty",
-      "structType": "ScalableFloat"
-    },
     "147": {
       "name": "FrontendPreviewScale",
       "type": "FloatProperty"
@@ -6120,11 +5996,6 @@
     "149": {
       "name": "StatList",
       "type": "SoftObjectProperty"
-    },
-    "150": {
-      "name": "RatingLookup",
-      "type": "StructProperty",
-      "structType": "CurveTableRowHandle"
     },
     "152": {
       "name": "SmallPreviewImage",
@@ -6143,10 +6014,6 @@
       "name": "FrontendPreviewInitialRotation",
       "type": "StructProperty",
       "structType": "Rotator"
-    },
-    "158": {
-      "name": "FrontendPreviewMeshOverride",
-      "type": "SoftObjectProperty"
     },
     "159": {
       "name": "FrontendPreviewSkeletalMeshOverride",
@@ -6408,6 +6275,11 @@
       "type": "ArrayProperty",
       "innerType": "StructProperty",
       "structType": "FortChallengeBundleQuestEntry"
+    },
+    "1": {
+      "name": "SuppressedQuestDefs",
+      "type": "ArrayProperty",
+      "innerType": "SoftObjectProperty"
     },
     "2": {
       "name": "CalendarEventTag",
@@ -8197,9 +8069,36 @@
       "name": "ContextOverrideWidget",
       "type": "ObjectProperty"
     },
+    "17": {
+      "name": "GadgetPriority",
+      "type": "IntProperty"
+    },
     "28": {
       "name": "AbilitySet",
       "type": "SoftObjectProperty"
+    },
+    "29": {
+      "name": "AttributeSet",
+      "type": "SoftObjectProperty"
+    },
+    "30": {
+      "name": "AttributeInitKey",
+      "type": "StructProperty",
+      "structType": "FortAttributeInitializationKey"
+    },
+    "31": {
+      "name": "TrackedAttributes",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "GameplayAttribute"
+    },
+    "37": {
+      "name": "WeaponItemDefinition",
+      "type": "SoftObjectProperty"
+    },
+    "49": {
+      "name": "bSupportsQuickbarFocus",
+      "type": "BoolProperty"
     },
     "53": {
       "name": "bForceIntoOverflow",
@@ -8209,10 +8108,19 @@
       "name": "bCanBeDropped",
       "type": "BoolProperty"
     },
+    "64": {
+      "name": "bOverridePickupMeshTransform",
+      "type": "BoolProperty"
+    },
     "73": {
       "name": "MiniMapIconBrush",
       "type": "StructProperty",
       "structType": "SlateBrush"
+    },
+    "76": {
+      "name": "PickupMeshTransform",
+      "type": "StructProperty",
+      "structType": "Transform"
     },
     "78": {
       "name": "SpecialActorPickupTag",
@@ -8243,6 +8151,10 @@
       "name": "PickupStaticMesh",
       "type": "SoftObjectProperty"
     },
+    "89": {
+      "name": "PickupSkeletalMesh",
+      "type": "SoftObjectProperty"
+    },
     "90": {
       "name": "PickupEffectOverride",
       "type": "SoftObjectProperty"
@@ -8254,6 +8166,10 @@
     "93": {
       "name": "DropSound",
       "type": "SoftObjectProperty"
+    },
+    "99": {
+      "name": "PreferredQuickbarSlot",
+      "type": "IntProperty"
     },
     "104": {
       "name": "Rarity",
@@ -8270,12 +8186,20 @@
       "type": "EnumProperty",
       "enumName": "EFortItemTier"
     },
+    "113": {
+      "name": "bAllowMultipleStacks",
+      "type": "BoolProperty"
+    },
     "115": {
       "name": "bForceAutoPickup",
       "type": "BoolProperty"
     },
     "118": {
       "name": "DisplayName",
+      "type": "TextProperty"
+    },
+    "122": {
+      "name": "SearchTags",
       "type": "TextProperty"
     },
     "123": {
@@ -9772,6 +9696,10 @@
       "type": "EnumProperty",
       "enumName": "EFortWeaponTriggerType"
     },
+    "64": {
+      "name": "bPreventDefaultPreload",
+      "type": "BoolProperty"
+    },
     "73": {
       "name": "AnalyticTags",
       "type": "StructProperty",
@@ -9786,6 +9714,11 @@
       "name": "ActualAnalyticFNames",
       "type": "ArrayProperty",
       "innerType": "NameProperty"
+    },
+    "76": {
+      "name": "CreativeTagsHelper",
+      "type": "StructProperty",
+      "structType": "FortCreativeTagsHelper"
     },
     "91": {
       "name": "bShowDirectionalArrowWhenFarOff",
@@ -9825,6 +9758,10 @@
       "name": "PickupSkeletalMesh",
       "type": "SoftObjectProperty"
     },
+    "125": {
+      "name": "PickupSound",
+      "type": "SoftObjectProperty"
+    },
     "127": {
       "name": "DropSound",
       "type": "SoftObjectProperty"
@@ -9856,6 +9793,16 @@
       "type": "EnumProperty",
       "enumName": "EFortInventoryFilter"
     },
+    "142": {
+      "name": "Tier",
+      "type": "EnumProperty",
+      "enumName": "EFortItemTier"
+    },
+    "143": {
+      "name": "MaxTier",
+      "type": "EnumProperty",
+      "enumName": "EFortItemTier"
+    },
     "146": {
       "name": "bNeverPersisted",
       "type": "BoolProperty"
@@ -9885,6 +9832,14 @@
       "type": "StructProperty",
       "structType": "GameplayTagContainer"
     },
+    "163": {
+      "name": "FrontendPreviewScale",
+      "type": "FloatProperty"
+    },
+    "165": {
+      "name": "StatList",
+      "type": "SoftObjectProperty"
+    },
     "168": {
       "name": "SmallPreviewImage",
       "type": "SoftObjectProperty"
@@ -9896,6 +9851,16 @@
     "171": {
       "name": "Series",
       "type": "ObjectProperty"
+    },
+    "172": {
+      "name": "FrontendPreviewPivotOffset",
+      "type": "StructProperty",
+      "structType": "Vector"
+    },
+    "173": {
+      "name": "FrontendPreviewInitialRotation",
+      "type": "StructProperty",
+      "structType": "Rotator"
     }
   },
   "AttachedParticleComponentDef": {

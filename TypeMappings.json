@@ -5153,7 +5153,7 @@
     "3": {
       "name": "Type",
       "type": "EnumProperty",
-      "innerType": "EFortQuestObjectiveStatEvent"
+      "enumName": "EFortQuestObjectiveStatEvent"
     },
     "4": {
       "name": "bIsCached",
@@ -5181,7 +5181,7 @@
     "1": {
       "name": "Type",
       "type": "EnumProperty",
-      "structType": "EInlineObjectiveStatTagCheckEntryType"
+      "enumName": "EInlineObjectiveStatTagCheckEntryType"
     },
     "2": {
       "name": "Require",
@@ -10341,13 +10341,82 @@
       "type": "EnumProperty",
       "enumName": "EFortQuestSubtype"
     },
+    "2": {
+      "name": "bShouldDisplayOverallQuestInformation",
+      "type": "BoolProperty"
+    },
+    "3": {
+      "name": "bAthenaUpdateObjectiveOncePerMatch",
+      "type": "BoolProperty"
+    },
+    "4": {
+      "name": "bAthenaMustCompleteInSingleMatch",
+      "type": "BoolProperty"
+    },
+    "11": {
+      "name": "bInitiallySuppressedReplacementQuest",
+      "type": "BoolProperty"
+    },
     "12": {
       "name": "bIncludedInCategories",
       "type": "BoolProperty"
     },
+    "21": {
+      "name": "bHideIncompleteObjectiveLocations",
+      "type": "BoolProperty"
+    },
+    "23": {
+      "name": "ObjectiveCompletionCount",
+      "type": "IntProperty"
+    },
+    "24": {
+      "name": "Rewards",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "FortItemQuantityPair"
+    },
     "25": {
       "name": "RewardsTable",
       "type": "ObjectProperty"
+    },
+    "30": {
+      "name": "Objectives",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "FortMcpQuestObjectiveInfo"
+    },
+    "43": {
+      "name": "CompletionText",
+      "type": "TextProperty"
+    },
+    "47": {
+      "name": "SortPriority",
+      "type": "IntProperty"
+    },
+    "48": {
+      "name": "QuestAbilitySet",
+      "type": "SoftObjectProperty"
+    },
+    "57": {
+      "name": "GrantToProfileType",
+      "type": "StrProperty"
+    },
+    "73": {
+      "name": "DisplayName",
+      "type": "TextProperty"
+    },
+    "74": {
+      "name": "ShortDescription",
+      "type": "TextProperty"
+    },
+    "75": {
+      "name": "Description",
+      "type": "TextProperty"
+    },
+    "78": {
+      "name": "GameplayTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
     }
   }
 }

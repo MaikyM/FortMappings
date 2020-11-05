@@ -5722,6 +5722,10 @@
       "type": "ArrayProperty",
       "innerType": "SoftObjectProperty"
     },
+    "30": {
+      "name": "EquippedAbilitySet",
+      "type": "SoftObjectProperty"
+    },
     "31": {
       "name": "EquippedCharacterParts",
       "type": "ArrayProperty",
@@ -10868,6 +10872,64 @@
       "type": "SoftObjectProperty"
     },
     "181": {
+      "name": "LargePreviewImage",
+      "type": "SoftObjectProperty"
+    }
+  },
+  "FortFeatItemDefinition": {
+    "2": {
+      "name": "bShouldDisplayOverallQuestInformation",
+      "type": "BoolProperty"
+    },
+    "4": {
+      "name": "bAthenaMustCompleteInSingleMatch",
+      "type": "BoolProperty"
+    },
+    "8": {
+      "name": "bHidden",
+      "type": "BoolProperty"
+    },
+    "12": {
+      "name": "bIncludedInCategories",
+      "type": "BoolProperty"
+    },
+    "23": {
+      "name": "ObjectiveCompletionCount",
+      "type": "IntProperty"
+    },
+    "27": {
+      "name": "HiddenRewards",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "FortHiddenRewardQuantityPair"
+    },
+    "30": {
+      "name": "Objectives",
+      "type": "ArrayProperty",
+      "innerType": "StructProperty",
+      "structType": "FortMcpQuestObjectiveInfo"
+    },
+    "57": {
+      "name": "GrantToProfileType",
+      "type": "StrProperty"
+    },
+    "73": {
+      "name": "DisplayName",
+      "type": "TextProperty"
+    },
+    "74": {
+      "name": "ShortDescription",
+      "type": "TextProperty"
+    },
+    "75": {
+      "name": "Description",
+      "type": "TextProperty"
+    },
+    "89": {
+      "name": "SmallPreviewImage",
+      "type": "SoftObjectProperty"
+    },
+    "90": {
       "name": "LargePreviewImage",
       "type": "SoftObjectProperty"
     }

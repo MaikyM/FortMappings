@@ -788,5 +788,34 @@
     "1": "Grid",
     "2": "None",
     "3": "EPlacementType_MAX"
+  },
+  "EFortStatType": {
+    "0": "Fortitude",
+    "1": "Offense",
+    "2": "Resistance",
+    "3": "Technology",
+    "4": "Fortitude_Team",
+    "5": "Offense_Team",
+    "6": "Resistance_Team",
+    "7": "Technology_Team",
+    "8": "Invalid",
+    "9": "EFortStatType_MAX"
+  },
+  "ESubGame": {
+    "0": "Campaign",
+    "1": "Athena",
+    "2": "Invalid",
+    "3": "Count",
+    "4": "Creative",
+    "5": "ESubGame_MAX"
+  },
+  "EFortGiftWrapType": {
+    "0": "System",
+    "1": "UserFree",
+    "2": "UserUnlock",
+    "3": "UserConsumable",
+    "4": "Message",
+    "5": "Ungift",
+    "6": "EFortGiftWrapType_MAX"
   }
 }

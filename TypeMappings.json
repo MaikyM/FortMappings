@@ -10933,5 +10933,12 @@
       "name": "LargePreviewImage",
       "type": "SoftObjectProperty"
     }
+  },
+  "FortShopOfferDisplayData": {
+    "0": {
+      "name": "Presentations",
+      "type": "ArrayProperty",
+      "innerType": "ObjectProperty"
+    }
   }
 }

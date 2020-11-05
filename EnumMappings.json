@@ -773,5 +773,20 @@
     "2": "PunchCard",
     "3": "QuickChallenge",
     "4": "EFortQuestSubtype_MAX"
+  },
+  "EFortResourceType": {
+    "0": "Wood",
+    "1": "Stone",
+    "2": "Metal",
+    "3": "Permanite",
+    "4": "GoldCurrency",
+    "5": "None",
+    "6": "EFortResourceType_MAX"
+  },
+  "EPlacementType": {
+    "0": "Free",
+    "1": "Grid",
+    "2": "None",
+    "3": "EPlacementType_MAX"
   }
 }

@@ -5736,6 +5736,11 @@
       "type": "EnumProperty",
       "enumName": "EFortWeaponTriggerType"
     },
+    "36": {
+      "name": "SecondaryTriggerType",
+      "type": "EnumProperty",
+      "enumName": "EFortWeaponTriggerType"
+    },
     "39": {
       "name": "bUsesCustomAmmoType",
       "type": "BoolProperty"
@@ -5863,16 +5868,20 @@
       "name": "bCanBeDepositedInStorageVault",
       "type": "BoolProperty"
     },
-    "82": {
-      "name": "bOverridePickupMeshTransform",
-      "type": "BoolProperty"
-    },
     "80": {
       "name": "bItemHasDurability",
       "type": "BoolProperty"
     },
+    "82": {
+      "name": "bOverridePickupMeshTransform",
+      "type": "BoolProperty"
+    },
     "83": {
       "name": "bAlwaysCountForCollectionQuest",
+      "type": "BoolProperty"
+    },
+    "84": {
+      "name": "bDropOnDeath",
       "type": "BoolProperty"
     },
     "90": {
@@ -5957,6 +5966,10 @@
     },
     "131": {
       "name": "bAllowMultipleStacks",
+      "type": "BoolProperty"
+    },
+    "132": {
+      "name": "bAutoBalanceStacks",
       "type": "BoolProperty"
     },
     "134": {
@@ -8065,6 +8078,16 @@
     }
   },
   "AthenaGadgetItemDefinition": {
+    "9": {
+      "name": "InventoryMinimapIconBrush",
+      "type": "StructProperty",
+      "structType": "SlateBrush"
+    },
+    "11": {
+      "name": "InventoryCompassIconBrush",
+      "type": "StructProperty",
+      "structType": "SlateBrush"
+    },
     "15": {
       "name": "ContextOverrideWidget",
       "type": "ObjectProperty"
@@ -8072,6 +8095,10 @@
     "17": {
       "name": "GadgetPriority",
       "type": "IntProperty"
+    },
+    "18": {
+      "name": "bDestroyGadgetWhenTrackedAttributesIsZero",
+      "type": "BoolProperty"
     },
     "28": {
       "name": "AbilitySet",
@@ -8092,6 +8119,18 @@
       "innerType": "StructProperty",
       "structType": "GameplayAttribute"
     },
+    "32": {
+      "name": "OnDestroyParticleSystem",
+      "type": "SoftObjectProperty"
+    },
+    "33": {
+      "name": "OnDestroySound",
+      "type": "SoftObjectProperty"
+    },
+    "34": {
+      "name": "OnDestroyAttachToSocketName",
+      "type": "NameProperty"
+    },
     "37": {
       "name": "WeaponItemDefinition",
       "type": "SoftObjectProperty"
@@ -8104,12 +8143,32 @@
       "name": "bForceIntoOverflow",
       "type": "BoolProperty"
     },
+    "57": {
+      "name": "bShowDirectionalArrowWhenFarOff",
+      "type": "BoolProperty"
+    },
     "58": {
       "name": "bCanBeDropped",
       "type": "BoolProperty"
     },
+    "63": {
+      "name": "bAllowedToBeLockedInInventory",
+      "type": "BoolProperty"
+    },
     "64": {
       "name": "bOverridePickupMeshTransform",
+      "type": "BoolProperty"
+    },
+    "65": {
+      "name": "bAlwaysCountForCollectionQuest",
+      "type": "BoolProperty"
+    },
+    "66": {
+      "name": "bDropOnDeath",
+      "type": "BoolProperty"
+    },
+    "67": {
+      "name": "bDropOnLogout",
       "type": "BoolProperty"
     },
     "73": {
@@ -8167,6 +8226,10 @@
       "name": "DropSound",
       "type": "SoftObjectProperty"
     },
+    "95": {
+      "name": "LandedSound",
+      "type": "SoftObjectProperty"
+    },
     "99": {
       "name": "PreferredQuickbarSlot",
       "type": "IntProperty"
@@ -8175,6 +8238,11 @@
       "name": "Rarity",
       "type": "EnumProperty",
       "enumName": "EFortRarity"
+    },
+    "107": {
+      "name": "FilterOverride",
+      "type": "EnumProperty",
+      "enumName": "EFortInventoryFilter"
     },
     "108": {
       "name": "Tier",
@@ -8194,8 +8262,20 @@
       "name": "bForceAutoPickup",
       "type": "BoolProperty"
     },
+    "117": {
+      "name": "ItemTypeNameOverride",
+      "type": "TextProperty"
+    },
     "118": {
       "name": "DisplayName",
+      "type": "TextProperty"
+    },
+    "119": {
+      "name": "ShortDescription",
+      "type": "TextProperty"
+    },
+    "120": {
+      "name": "Description",
       "type": "TextProperty"
     },
     "122": {
@@ -8206,6 +8286,10 @@
       "name": "GameplayTags",
       "type": "StructProperty",
       "structType": "GameplayTagContainer"
+    },
+    "133": {
+      "name": "WidePreviewImage",
+      "type": "SoftObjectProperty"
     },
     "134": {
       "name": "SmallPreviewImage",
@@ -10382,6 +10466,145 @@
       "name": "GameplayTags",
       "type": "StructProperty",
       "structType": "GameplayTagContainer"
+    }
+  },
+  "FortDecoItemDefinition": {
+    "1": {
+      "name": "BlueprintClass",
+      "type": "SoftObjectProperty"
+    },
+    "2": {
+      "name": "PlacementPreviewClass",
+      "type": "SoftObjectProperty"
+    },
+    "3": {
+      "name": "bCanBePlacedOnEnemyBuildings",
+      "type": "BoolProperty"
+    },
+    "4": {
+      "name": "GridSnapSizeOverride",
+      "type": "FloatProperty"
+    },
+    "7": {
+      "name": "PlacementTypeOverride",
+      "type": "EnumProperty",
+      "enumName": "EPlacementType"
+    },
+    "12": {
+      "name": "bIgnoreCollisionWithStructuralGridActors",
+      "type": "BoolProperty"
+    },
+    "13": {
+      "name": "bIgnoreCollisionWithFortStaticMeshActors",
+      "type": "BoolProperty"
+    },
+    "19": {
+      "name": "bAllowPlacementOnWorldGeometry",
+      "type": "BoolProperty"
+    },
+    "21": {
+      "name": "bDestroySmallObjectsWhenPlaced",
+      "type": "BoolProperty"
+    },
+    "22": {
+      "name": "bSetOwningPlayerForSpawnedDeco",
+      "type": "BoolProperty"
+    },
+    "23": {
+      "name": "bSetSpawnedDecoOnPlayerTeam",
+      "type": "BoolProperty"
+    },
+    "25": {
+      "name": "bCancelToolWhenPlaced",
+      "type": "BoolProperty"
+    },
+    "26": {
+      "name": "bCancelAbilityOnUnequip",
+      "type": "BoolProperty"
+    },
+    "32": {
+      "name": "bRequiresPermissionToEditWorld",
+      "type": "BoolProperty"
+    },
+    "33": {
+      "name": "bAutoCreateAttachmentBuilding",
+      "type": "BoolProperty"
+    },
+    "34": {
+      "name": "AutoCreateAttachmentBuildingResourceType",
+      "type": "EnumProperty",
+      "enumName": "EFortResourceType"
+    },
+    "36": {
+      "name": "AutoCreateAttachmentBuildingShapes",
+      "type": "ArrayProperty",
+      "innerType": "SoftObjectProperty"
+    },
+    "37": {
+      "name": "AllowedShapes",
+      "type": "ArrayProperty",
+      "innerType": "SoftObjectProperty"
+    },
+    "40": {
+      "name": "bShowPreviewOnPressHeld",
+      "type": "BoolProperty"
+    },
+    "41": {
+      "name": "WeaponActorClass",
+      "type": "SoftObjectProperty"
+    },
+    "76": {
+      "name": "bPreventDefaultPreload",
+      "type": "BoolProperty"
+    },
+    "87": {
+      "name": "ActualAnalyticFNames",
+      "type": "ArrayProperty",
+      "innerType": "NameProperty"
+    },
+    "112": {
+      "name": "bDropOnDeath",
+      "type": "BoolProperty"
+    },
+    "119": {
+      "name": "MiniMapIconBrush",
+      "type": "StructProperty",
+      "structType": "SlateBrush"
+    },
+    "150": {
+      "name": "Rarity",
+      "type": "EnumProperty",
+      "enumName": "EFortRarity"
+    },
+    "158": {
+      "name": "bNeverPersisted",
+      "type": "BoolProperty"
+    },
+    "162": {
+      "name": "bInventorySizeLimited",
+      "type": "BoolProperty"
+    },
+    "164": {
+      "name": "DisplayName",
+      "type": "TextProperty"
+    },
+    "168": {
+      "name": "SearchTags",
+      "type": "TextProperty"
+    },
+    "169": {
+      "name": "GameplayTags",
+      "type": "StructProperty",
+      "structType": "GameplayTagContainer"
+    },
+    "173": {
+      "name": "MaxStackSize",
+      "type": "StructProperty",
+      "structType": "ScalableFloat"
+    },
+    "180": {
+      "name": "SmallPreviewImage",
+      "type": "SoftObjectProperty"
     }
   }
 }
